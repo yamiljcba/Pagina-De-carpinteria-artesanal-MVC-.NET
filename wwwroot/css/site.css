@@ -112,6 +112,20 @@ header{
         background-color: var(--textoprincipal);
         padding: 30px;
     }
+    .buscador input
+    {
+        position: relative;
+        width:110%;
+        height:40px;
+        border:1px solid gray;
+        border-radius:30px;
+        padding:3px;
+        z-index:0;
+      
+    
+    }
+   
+  
 .boton
 {
     
