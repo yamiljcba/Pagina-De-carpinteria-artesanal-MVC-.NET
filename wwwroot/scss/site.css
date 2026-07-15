@@ -1,4 +1,20 @@
-﻿.titulo {
+﻿html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main[role=main] {
+  flex: 1 0 auto;
+}
+
+.titulo {
   color: #F7F6F2;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
 }
@@ -10,8 +26,8 @@
   background-image: url("../img/carpinteriafinal.png");
   background-size: cover;
   height: 500px;
-  justify-content: center;
   margin-bottom: 60px;
+  align-items: center;
 }
 .portada .container {
   padding: 50px;
@@ -66,13 +82,34 @@
 }
 
 .footer {
+  flex-shrink: 0;
+  position: relative !important;
+  bottom: auto !important;
+  width: 100% !important;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 25px 0;
   text-align: center;
   gap: 45px;
+  background-color: #2D2D2D;
+  width: 100%;
+}
+.footer .iconosredes a {
+  border: 1px solid gray;
+  border-radius: 100px;
+  padding: 10px;
+  color: #8B5E34;
+}
+.footer .iconosredes a i {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .iconosredes a:hover {
+  transition: 0.3s;
+  color: #4A5D4E;
+  background-color: #F7F6F2;
 }
 .footer .contenido-footer {
   display: flex;
