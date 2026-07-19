@@ -22,11 +22,9 @@ main[role=main] {
 .portada {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 80px;
   background-image: url("../img/carpinteriafinal.png");
   background-size: cover;
-  height: 500px;
-  margin-bottom: 60px;
   align-items: center;
 }
 .portada .container {
@@ -81,6 +79,21 @@ main[role=main] {
   background-color: #A3B899 !important;
 }
 
+.estadistica .contenedor .celda {
+  text-align: center;
+}
+.estadistica .contenedor .tarjeta {
+  border: 1px solid gray;
+  border-radius: 8px;
+  border-color: #A3B899;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 300ms;
+}
+.estadistica .contenedor .tarjeta:hover {
+  transform: translateY(-10px);
+}
+
 .footer {
   flex-shrink: 0;
   position: relative !important;
@@ -98,9 +111,10 @@ main[role=main] {
 }
 .footer .iconosredes a {
   border: 1px solid gray;
-  border-radius: 100px;
-  padding: 10px;
-  color: #8B5E34;
+  border-radius: 40px;
+  margin: 5px;
+  padding: 20px;
+  color: #A3B899;
 }
 .footer .iconosredes a i {
   font-size: 20px;
@@ -110,6 +124,15 @@ main[role=main] {
   transition: 0.3s;
   color: #4A5D4E;
   background-color: #F7F6F2;
+}
+.footer .iconosredes a:nth-child(1) {
+  color: #E1306C;
+}
+.footer .iconosredes a:nth-child(2) {
+  color: #25D366;
+}
+.footer .iconosredes a:nth-child(3) {
+  color: #1877F2;
 }
 .footer .contenido-footer {
   display: flex;
@@ -134,4 +157,54 @@ main[role=main] {
 .footer .contenido-footer ul li a:hover {
   color: #4A5D4E;
   transition: 0.3s;
+}
+
+.formulario {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.formulario .imagenformulario img {
+  width: 100px;
+  margin: 20px;
+}
+.formulario .labelusuario {
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 9px;
+}
+.formulario #txtUsuario {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 90px;
+  padding: 5px;
+}
+.formulario .labelcontra {
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 9px;
+}
+.formulario #txtContra {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 90px;
+  padding: 5px;
+}
+.formulario .Notas {
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin: 10px;
+}
+.formulario #txtNotas {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 200px;
+  padding: 5px;
+}
+.formulario .imgcliente {
+  width: 800px;
+  height: 600px;
 }
